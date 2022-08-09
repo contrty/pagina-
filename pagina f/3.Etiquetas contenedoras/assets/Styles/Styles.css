@@ -1,0 +1,22 @@
+#imagen{
+    width: 300px;
+    border-radius: 50px;
+}
+
+.imagenes{
+    width: 350px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.tenis{
+    width: 350px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.otres{
+    width: 350px;
+    height:  auto;
+    border-radius: 50px;
+}

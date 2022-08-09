@@ -1,0 +1,28 @@
+table{
+    border-radius: 5px solid #000 ;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead tr, th{
+    background-color: #94d0ed;
+    border: 5px solid #c9e5f9;
+}
+
+tbody td{
+    background-color: #db797b;
+    border: 5px solid #c9e5f9;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+.Pedazo{
+    background-color: #94d0ed;
+    border: 5px solid #c9e5f9;
+}
+
+.Perro{
+    border-radius: 50%;
+}

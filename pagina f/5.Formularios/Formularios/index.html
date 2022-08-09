@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="Datos" method="Post" action="backend/receive.php">
+        <fieldset><legend>Datos Personales:</legend>
+            <label for="Name">Nombre:</label>
+            <input type="text"
+            id="Name"
+            Name="Name"
+            placeholder="Introduce tu nombre"
+            minlength="3"
+            maxlength="50"
+            title="Introduce al menos 3 caractere maximo 50"
+            tabindex="0"
+            autofocus="true"
+            autocomplete="off"
+            required>
+            <br><br>
+            <select id="typeDocument" name="typeDocument">
+                <option value="Nada" select="Selected">Seleccione un tipo de documento</option>
+                <option value="C.C">Cedula de Ciudadania</option>
+                <option value="T.I">Tarjeta de Identidad</option>
+                <option value="C.E">Cedula Extranjera</option>
+            </select>
+            <label id="Document">No Documentos</label>
+            <input type="Number" id="Document" name="Document" placeholder="Introduce tu documento de indentidad"
+            min="2"
+            max="infinte"
+            tabindex="1">
+            <label for="Estadocivil">Estado Civil:</label>
+            <input type="radio" name="Ecivil" id="Ecivil" value="soltero">solter@
+            <input type="radio" name="Ecivil" id="Ecivil" value="Casado">Casad@
+            <input type="radio" name="Ecivil" id="Ecivil" value="Divorciado">Divorciad@
+            <input type="radio" name="Ecivil" id="Ecivil" value="Viudo">Viud@
+        </fieldset>
+        <fieldset><legend>Informacion de Estudio y Otros</legend>
+            <label for="colores">Color Favorito:</label>
+            <input type="Color" id="Colores">
+            <label for="dateInsc">Fecha de Inscripción:</label>
+            <input type="Date" id="DateInsc">
+            <label for="Documentfile">Cargue los documentos de requisitos:</label>
+            <input type="file" name="file" id="Documentfile">
+        </fieldset>
+        <hr>
+        <labe for="Lenguajes">Lenguajes de Programacion</label>
+            <select id="Lenguajes" name="Lenguajes">
+                <optgroup label="Lenguajes Tipados">
+                    <option VAlue="Java">Java</option>
+                    <option valu="CSharp">C#</option>
+                    <option value="C">C++</option>
+                </optgroup>
+                <optgroup label="Lenguajes no Tipados">
+                    <optipn value="Python">Python</optipn>
+                    <option value="JS">JavaScript</option>
+                </optgroup>
+            </select>
+            <br>
+        <label for="Acepta">¿Acepta terminos y condiciones?</label>
+        <input type="checkbox" id="terminos">
+        <br><br>
+        <hr>
+        <fieldset>
+            <form action="backend/receive.php" method="Post">
+                <label >Tiempo de llegada:
+                <input type="Time" name="eta">
+                </label>
+                <br><br>
+                <label form="Años" value="">Define cuantos años tienes: </label>
+                <input type="Range" id="Años" name="Años" min="0" max="100">
+                <br><br>
+                <label form="Telefono">Numero de celular: </label>
+                <input type="tel" name="Telefono" placeholder="Numero">
+                <br><br>
+                <label>Semana de vacaiones<legend></legend></label>
+                <input type="week" name="Semana">
+                <br><br>
+                <label form="Sitio web">Añade el sitio Web</label>
+                <input type="url" name="Sitio web" placeholder="URL">
+                <br><br>
+                <form action="/action-page.php"></form>
+                    <label>Agregar un comentario</label>
+                    <textarea name="Mensaje" placeholder="Comparte tu opinion"></textarea>
+                <br><br>
+                <label>Comida que mas te gusta:
+                    <input list="Comida" name="MyComida">
+                </label>
+                <datalist id="Comida">
+                    <option value="Queso"></option>
+                    <option value="Frutas"></option>
+                    <option value="Salchipapas"></option>
+                    <option value="Hamburguesa"></option>
+                    <option value="Perro"></option>
+                    <option value="Papa rellena"></option>
+                    <option value="Empanada"></option>
+                    <option value="Gaseosa"></option>
+                </datalist>
+         </fieldset>
+
+        
+    <hr>
+    <input type="Submit" value="Envio de Datos"><!--PHP-->
+    <button id="Validar">Validar</button><!--JS-->
+    <input type="reset" value="Limpiar">
+    <input type="hidden" id="ArticuloId" name="ArticuloId" value="34657">
+    
+    </form>
+    <script src="Script/Main.js"></script>
+</body>
+</html>
